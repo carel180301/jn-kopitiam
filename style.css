@@ -1,0 +1,162 @@
+/* 1. Define the missing color variable here */
+:root {
+    --color-font: #333333; 
+}
+
+.timeline {
+    display: flex;
+    align-items: flex-start; /* Changed from stretch so lines behave nicely */
+    gap: 30px;
+    margin-bottom: 2rem;
+    padding: 0 2rem; /* Optional: adds breathing room on the sides */
+}
+
+.timeline .section-title {
+    position: sticky;
+    top: 20px;
+    min-width: 100px;
+    font-weight: bold;
+}
+
+.timeline .section-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.timeline article {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    /* Removed max-width: 20rem; to allow the text to use the available space */
+}
+    
+.timeline aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timeline main {
+    padding-bottom: 2rem;
+}
+
+.timeline .dot {
+    --size: .75rem; /* Slightly larger for visibility */
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: var(--color-font);
+    flex-shrink: 0;
+    margin-top: 0.5rem; /* Aligns dot perfectly with the center of the H3 text */
+}
+
+.timeline .line {
+    flex-grow: 1;
+    min-height: 80px;
+    width: 3px;
+    background-color: var(--color-font);
+    margin-top: 8px;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#modalProjectImage {
+    max-height: 90vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.yuji-boku {
+    font-family: "Yuji Boku", serif;
+}
+
+.logo-marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo-track {
+    display: flex;
+    width: max-content;
+    animation: logoScroll 4s linear infinite;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-right: 80px;
+}
+
+.logo-img {
+    width: 180px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@keyframes logoScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.menu-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-cards .card {
+    width: 18rem;
+}
+
+/* Bigger than 425px */
+@media (min-width: 426px) {
+    .menu-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .menu-cards .card {
+        width: calc((100% - 3rem) / 3);
+    }
+}
+
+.hero {
+    background:
+        linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)),
+        url('assets/janichi-matcha_hero.png') center center / cover no-repeat;
+}
+
+
+/* Desktop */
+@media (min-width: 992px) {
+    .hero {
+        background-size: auto, 150% auto;
+    }
+}

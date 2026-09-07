@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JN Kopitiam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary"
+     style="border: 1px solid #f3c6d1;">
+        <div class="container-fluid">
+            <img src="assets/logo-jnk-transparent.png" alt="Logo" width="120" height="80" class="d-inline-block align-text-top">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_menu">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#section_aboutUs">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_order">Order</a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center mb-5 hero"
+     data-aos="fade-up">
+        <div class="text-center">
+            <h1 class="display-1 yuji-boku fw-bold lh-1 mb-3">
+                良質 <br>
+                "High Quality"
+            </h1>
+
+            <div class="d-flex justify-content-center">
+                <a href="#section_menu"
+                class="btn btn-lg"
+                style="background-color: #ee7090; color: white;">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <section id="section_menu" class="mb-5 container col-10">
+        <h2 class="text-center yuji-boku" data-aos="fade-up">Menu</h2>
+        <br>
+
+        <h3 class="yuji-boku" data-aos="fade-up">Foods</h3>
+        <br>
+
+        <div class="menu-cards">
+            <div class="card" data-aos="fade-up">
+                <img src="assets/spaghetti bolognese.jpg" class="card-img-top" alt="Spaghetti Bolognese">
+                <div class="card-body">
+                    <h4 class="card-title yuji-boku">Spaghetti Bolognese</h4>
+                    <!-- <p class="card-text">Ceremonial grade matcha + cold water + maple syrup</p> -->
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <img src="assets/spaghetti carbonara.jpg" class="card-img-top" alt="Spaghetti Carbonara">
+                <div class="card-body">
+                    <h4 class="card-title yuji-boku">Spaghetti Carbonara</h4>
+                    <!-- <p class="card-text">Ceremonial grade matcha + oat milk + maple syrup</p> -->
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <img src="assets/nasi goreng.jpg" class="card-img-top" alt="Nasi Goreng">
+                <div class="card-body">
+                    <h4 class="card-title yuji-boku">Nasi Goreng</h4>
+                    <!-- <p class="card-text">Ceremonial grade matcha + strawberry jam + oat milk + maple syrup</p> -->
+                </div>
+            </div>
+        </div>
+
+        
+        <h3 class="yuji-boku mt-5" data-aos="fade-up">Drinks</h3>
+        <br>
+        <div class="menu-cards">
+            <div class="card" data-aos="fade-up">
+                <img src="assets/matcha float.jpg" class="card-img-top" alt="Matcha Float">
+                <div class="card-body">
+                    <h4 class="card-title yuji-boku">Matcha Float</h4>
+                    <!-- <p class="card-text">Orange Juice + Water</p> -->
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <img src="assets/lemon sereh jahe.jpg" class="card-img-top" alt="Lemon Sereh Jahe">
+                <div class="card-body">
+                    <h4 class="card-title yuji-boku">Lemon Sereh Jahe</h4>
+                    <!-- <p class="card-text">Guava Juice + Water</p> -->
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <img src="assets/thai tea float.jpg" class="card-img-top" alt="Thai Tea Float">
+                <div class="card-body">
+                    <h4 class="card-title yuji-boku">Thai Tea Float</h4>
+                    <!-- <p class="card-text">Guava Juice + Water</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="section_aboutUs" class="mb-5 container col-10 col-md-8 col-lg-6" data-aos="fade-up">
+        <h2 class="text-center yuji-boku">About Us</h2>
+        <p class="text-center">Janichi Matcha is a premium matcha brand that offers the high quality matcha products. Our motto is 良質 "High Quality" that indicates our commitment to give the highest quality products for our customers.</p>
+        <p class="text-center">Janichi Matcha stands for 'January' and 'Ichi (means 'one' in Japanese)' because we were established since 1st January 2026. 1st January is the first day of the year and it also symbolizes our dream to be the #1 matcha brand in Indonesia.</p>
+      -->
+        <!-- <a href="assets/CV Carel Prianugra Ceri Pratama.pdf" target="_blank" style="text-decoration: none;">
+            <button class="d-block mx-auto btn btn-primary">Go To Our Shop</button>
+        </a>   -->
+    <!-- </section> -->
+
+    <section id="section_order">
+        <div class="container-fluid text-center overflow-hidden" data-aos="fade-up">
+            <h2 class="text-center text-black yuji-boku">
+                We are available on ......
+            </h2><br>
+
+            <div class="logo-marquee">
+                <div class="logo-track">
+                    <div class="logo-group">
+                        <img src="assets/logo-fm.png" alt="Fresh Market Bintaro" class="logo-img">
+                        <img src="assets/logo_go-food.png" alt="Go Food" class="logo-img">
+                        <img src="assets/logo_grab-food.png" alt="Grab Food" class="logo-img">
+                    </div>
+
+                    <div class="logo-group" aria-hidden="true">
+                        <img src="assets/logo-fm.png" alt="Fresh Market Bintaro" class="logo-img">
+                        <img src="assets/logo_go-food.png" alt="" class="logo-img">
+                        <img src="assets/logo_grab-food.png" alt="" class="logo-img">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5 p-5 text-center" data-aos="fade-up" style="background-color: #ee7090;">
+            <h2 class="text-center text-white yuji-boku"> Something Delicious Is Waiting for You! Order now </h2> <br>
+
+            <a href="https://gofood.link/a/ToimeQu" class="btn btn-success btn-lg rounded-pill  px-5 py-3 mb-3">
+                Go Food
+            </a> <br>
+
+            <a href="https://r.grab.com/g/2-1-6-C76HDGEVRPJUBE" class="btn btn-success btn-lg rounded-pill  px-5 py-3">
+                Grab Food
+            </a>
+        </div>
+    </section>
+    	
+    <div class="container-fluid px-4 px-md-5" data-aos="fade-up">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+            <div class="d-flex align-items-center">
+                <span class="mb-0 text-body-secondary fs-4">
+                    &copy; 2026 JN Kopitiam
+                </span>
+            </div>
+
+            <ul class="nav justify-content-end list-unstyled d-flex align-items-center">
+                <li class="ms-3">
+                    <a class="text-body-secondary d-flex align-items-center"
+                    href="https://www.instagram.com/janichi.matcha/"
+                    aria-label="Instagram"
+                    target="_blank">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                </li>
+
+                <!-- <li class="ms-3">
+                    <a class="text-body-secondary d-flex align-items-center"
+                        href="https://www.tiktok.com/@janichi.matcha?_r=1&_t=ZS-98oHO9aexiX"
+                        aria-label="TikTok"
+                        target="_blank">
+                            <i class="bi bi-tiktok fs-4"></i>
+                    </a>
+                </li> -->
+            </ul>
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script>
+        const modalImage = document.getElementById("modalProjectImage");
+
+        document.querySelectorAll(".project-img").forEach(img => {
+            img.addEventListener("click", function () {
+                modalImage.src = this.src;
+                modalImage.alt = this.alt;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -132,8 +132,8 @@ html {
     width: 18rem;
 }
 
-/* Bigger than 425px */
-@media (min-width: 426px) {
+/* Bigger than 768px */
+@media (min-width: 768px) {
     .menu-cards {
         flex-direction: row;
         flex-wrap: wrap;

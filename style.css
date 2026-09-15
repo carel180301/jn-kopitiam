@@ -162,4 +162,7 @@ html {
 
 body{
     background-color: #fffcd1;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
 }

@@ -1,3 +1,5 @@
+
+
 :root {
     --color-font: #333333; 
 }
@@ -160,9 +162,10 @@ html {
     }
 }
 
-body{
+body {
     background-color: #fffcd1;
     font-family: Georgia, serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }

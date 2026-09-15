@@ -1,5 +1,3 @@
-
-
 :root {
     --color-font: #333333; 
 }
@@ -150,8 +148,10 @@ html {
 
 .hero {
     background:
-        linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)),
-        url('assets/jnk.jpg') center center / cover no-repeat;
+        linear-gradient(rgba(255,255,255,0.1), 
+        rgba(255,255,255,0.1)),
+        url('assets/hero.jpg')
+        center center / cover no-repeat;
 }
 
 
@@ -168,4 +168,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+#section_toko-kami .row {
+    margin-left: 0;
+    margin-right: 0;
 }

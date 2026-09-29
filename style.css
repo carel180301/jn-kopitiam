@@ -121,28 +121,76 @@ html {
     }
 }
 
+.menu-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .menu-cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.menu-cards::-webkit-scrollbar {
+    display: none;
 }
 
 .menu-cards .card {
-    width: 18rem;
+    flex: 0 0 18rem;
+    scroll-snap-align: start;
+    border: none;
+    transition: all 0.3s ease;
 }
 
-/* Bigger than 768px */
-@media (min-width: 768px) {
-    .menu-cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
+.menu-cards .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.carousel-btn {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    opacity: 0.8;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
 
     .menu-cards .card {
-        width: calc((100% - 3rem) / 3);
+        flex: 0 0 85%;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+
+    .menu-cards .card {
+        flex: 0 0 calc((100% - 3rem) / 3);
     }
 }
 

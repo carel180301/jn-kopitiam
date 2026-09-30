@@ -232,3 +232,21 @@ footer {
     margin-left: 0;
     margin-right: 0;
 }
+
+#section_order {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#section_order .container-fluid {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}

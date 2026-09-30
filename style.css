@@ -218,7 +218,17 @@ body {
     overflow-x: hidden;
 }
 
+#section_toko-kami {
+    width: 100%;
+}
+
 #section_toko-kami .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer {
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
 }
